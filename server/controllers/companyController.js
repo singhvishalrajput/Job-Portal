@@ -96,6 +96,7 @@ export const getCompanyData = async(req, res) =>{
 // Post a new Job
 export const postJob = async(req, res) =>{
 
+    const { title, description, location, salary } = req.body
     
     
 }
@@ -107,6 +108,8 @@ export const getCompanyJobApplicants = async(req, res) =>{
 
 // Get Company Posted Jobs
 export const getCompanyPostedJobs = async(req, res) =>{
+
+
 
 }
 
