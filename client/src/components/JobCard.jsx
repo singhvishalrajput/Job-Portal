@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { assets } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
+import { AppContext } from '../context/AppContext';
 
 const JobCard = ({ job }) => {
 
     const navigate = useNavigate();
+    
 
   return (
     <div className='border p-6 shadow rounded '>
         <div className='flex justify-between items-center'>
-            <img className='h-8' src={assets.company_icon} alt="" />
+            <img className='h-8' src={job.companyId.image} alt="" />
         </div>
         <h4 className='font-medium text-xl mt-2'>{job.title}</h4>
         <div className='flex items-center gap-3 mt-2 text-xs'>

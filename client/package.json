@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.21.0",
+    "axios": "^1.7.9",
     "k-convert": "^1.0.6",
     "k-unit-converter": "^1.0.1",
     "moment": "^2.30.1",
